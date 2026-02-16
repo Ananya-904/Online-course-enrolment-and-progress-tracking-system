@@ -65,11 +65,11 @@ The implementation is **MySQL-compatible**, uses **Third Normal Form (3NF)**, an
 
 **Relationships:**
 
-- **Users** — One user can be Instructor of many **Courses**; one user can have many **Enrollments** (as Student).
-- **Courses** — One course has many **Modules** (ordered); one course has many **Enrollments**.
-- **Enrollments** — One enrollment (user + course) has many **Progress** rows (one per module).
-- **Modules** — One module has one **Quiz**; one module appears in many **Progress** rows.
-- **Progress** — One progress row (enrollment + module) can have many **Scores** (quiz attempts).
+- **Users** - One user can be Instructor of many **Courses**; one user can have many **Enrollments** (as Student).
+- **Courses** - One course has many **Modules** (ordered); one course has many **Enrollments**.
+- **Enrollments** - One enrollment (user + course) has many **Progress** rows (one per module).
+- **Modules** - One module has one **Quiz**; one module appears in many **Progress** rows.
+- **Progress** - One progress row (enrollment + module) can have many **Scores** (quiz attempts).
 
 ---
 
@@ -77,7 +77,7 @@ The implementation is **MySQL-compatible**, uses **Third Normal Form (3NF)**, an
 
 | Table        | Primary Key | Foreign Keys                    | Notes                              |
 |-------------|-------------|----------------------------------|------------------------------------|
-| Users       | id          | —                                | role: Student / Instructor / Admin |
+| Users       | id          | -                                | role: Student / Instructor / Admin |
 | Courses     | id          | instructor_id → Users(id)        | One instructor per course          |
 | Modules     | id          | course_id → Courses(id)          | module_order per course            |
 | Enrollments | id          | user_id → Users(id), course_id → Courses(id) | Unique (user_id, course_id) |
