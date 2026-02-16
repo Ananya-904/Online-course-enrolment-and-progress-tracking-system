@@ -93,12 +93,12 @@ Referential integrity is enforced with `ON DELETE CASCADE` or `ON DELETE RESTRIC
 
 ```
 online-course-db/
-├── schema.sql      # CREATE TABLE statements (constraints, indexes, comments)
-├── procedures.sql  # Stored procedures (EnrollStudent, UpdateModuleProgress, RecordQuizScore, GenerateStudentReport)
-├── sample_data.sql # Test data for all tables
-├── views.sql       # Reporting views
-├── queries.sql     # Performance reports and core queries
-└── README.md       # This documentation
+schema.sql      # CREATE TABLE statements (constraints, indexes, comments)
+procedures.sql  # Stored procedures (EnrollStudent, UpdateModuleProgress, RecordQuizScore, GenerateStudentReport)
+sample_data.sql # Test data for all tables
+views.sql       # Reporting views
+queries.sql     # Performance reports and core queries
+README.md       # This documentation
 ```
 
 ---
