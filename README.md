@@ -4,9 +4,9 @@
 
 This project implements a **relational database system** for an e-learning platform that supports:
 
-- **Course registration** — Students enroll in courses; each enrollment is tracked.
-- **Progress tracking** — Module completion and quiz scores are recorded per enrollment.
-- **Performance analytics** — Reports for top performers, completion rates, and student rankings.
+- **Course registration** - Students enroll in courses; each enrollment is tracked.
+- **Progress tracking** - Module completion and quiz scores are recorded per enrollment.
+- **Performance analytics** - Reports for top performers, completion rates, and student rankings.
 
 The implementation is **MySQL-compatible**, uses **Third Normal Form (3NF)**, and includes:
 
