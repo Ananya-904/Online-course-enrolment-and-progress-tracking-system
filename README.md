@@ -201,9 +201,3 @@ Returns one row per enrollment with: `user_id`, `student_name`, `course_title`, 
 - **Indexes:** Placed on foreign keys, unique columns (e.g. email), and common filter/sort columns (role, date_enrolled, completion_status).
 - **Constraints:** UNIQUE on (user_id, course_id) for Enrollments and (enrollment_id, module_id) for Progress; CHECK on Scores(score >= 0).
 - **Character set:** `utf8mb4` for full Unicode support.
-
----
-
-## License and Use
-
-This is production-quality educational SQL for an online course enrolment and progress tracking system. Use and adapt as needed for your environment.
